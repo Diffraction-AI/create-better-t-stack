@@ -45,7 +45,7 @@ export function ActionButtons({
         </p>
         <span aria-hidden="true" className="h-px flex-1 bg-fd-border" />
       </div>
-      <div className="grid grid-cols-2 gap-1.5">
+      <div className="grid grid-cols-2 gap-1.5 sm:gap-2">
         <button
           type="button"
           onClick={onRandom}
@@ -67,7 +67,7 @@ export function ActionButtons({
         <button
           type="button"
           onClick={onReset}
-          className={cn(mutedActionClasses, !hasSavedStack && "col-span-2")}
+          className={cn(mutedActionClasses, hasSavedStack && "col-span-2")}
           title="Reset to defaults"
         >
           <RefreshCw className="h-3 w-3" />
