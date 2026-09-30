@@ -41,7 +41,7 @@ export function ActionButtons({
     <div className="space-y-2">
       <div className="flex items-center gap-3">
         <p className="font-mono text-[11px] text-fd-muted-foreground uppercase tracking-[0.08em]">
-          Actions
+          Quick actions
         </p>
         <span aria-hidden="true" className="h-px flex-1 bg-fd-border" />
       </div>
@@ -50,7 +50,7 @@ export function ActionButtons({
           type="button"
           onClick={onRandom}
           className="builder-focus-ring pointer-coarse:min-h-8 flex items-center justify-center gap-1.5 rounded-[4px] border px-2 py-1.5 font-mono text-[10px] text-primary uppercase tracking-[0.10em] transition-colors duration-150 hover:border-primary"
-          title="Generate a random stack"
+          title="Pick a random combination of technologies"
         >
           <Shuffle className="h-3 w-3" />
           Randomize
